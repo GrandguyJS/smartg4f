@@ -29,7 +29,10 @@ get_provider(
 ```
 
 Example usage:
-`get_provider(prompt="How is the weather today=", model="gpt-4", timeout=5)`
+```get_provider(prompt="How is the weather today?", model="gpt-4", timeout=5)```
 
-Troubleshooting:
-You need to use await -> If you use get_provider in another function, it must be async, else use asyncio.run()
+## Troubleshooting
+1. Use `await get_provider()`
+2. Use async in function
+3. If outside a function, use asyncio.run()
+4. Make sure you have g4f installed
