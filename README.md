@@ -26,10 +26,14 @@ get_provider(
     model: ModelType #(Default: gpt-4o)
     timeout: Integer #When a provider is too slow (Default: 15 seconds)
 )
-```
 
-Example usage:
-```get_provider(prompt="How is the weather today?", model="gpt-4", timeout=5)```
+# Example usage:
+get_provider(
+    prompt="How is the weather today?",
+    model="gpt-4",
+    timeout=5
+)
+```
 
 ## Troubleshooting
 1. Use `await get_provider()`
