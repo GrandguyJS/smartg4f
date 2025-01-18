@@ -19,11 +19,14 @@ response = g4f.ChatCompletion.create(
 )
 ```
 
-get_provider() params:
-prompt: Prompt that tests the providers (Default: "Say hello")
-validation: Validation function (Default: returns True if the output is of type str)
-model: (Default: gpt-4o)
-timeout: When a provider is too slow (Default: 15 seconds)
+```
+get_provider(
+    prompt: String #Prompt that tests the providers (Default: "Say hello")
+    validation: Function #Validation function (Default: returns True if the output is of type str)
+    model: ModelType #(Default: gpt-4o)
+    timeout: Integer #When a provider is too slow (Default: 15 seconds)
+)
+```
 
 Example usage:
 `get_provider(prompt="How is the weather today=", model="gpt-4", timeout=5)`
