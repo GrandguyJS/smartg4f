@@ -1,7 +1,7 @@
-from smartg4f import get_fastest_providers
+from smartg4f import get_provider
 import asyncio
 
 async def test():
-    await get_fastest_providers()
+    await get_provider(log=True)
 
 asyncio.run(test())
