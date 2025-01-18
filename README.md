@@ -25,13 +25,15 @@ get_provider(
     validation: Function #Validation function (Default: returns True if the output is of type str)
     model: ModelType #(Default: gpt-4o)
     timeout: Integer #When a provider is too slow (Default: 15 seconds)
+    log: Boolean #Log providers
 )
 
-# Example usage:
+# Example usage
 get_provider(
     prompt="How is the weather today?",
     model="gpt-4",
-    timeout=5
+    timeout=5,
+    log=False,
 )
 ```
 
