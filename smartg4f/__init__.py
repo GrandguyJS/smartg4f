@@ -1,1 +1,1 @@
-from .core import get_provider, get_fastest_providers
+from .core import get_provider, get_fastest_providers, async_get_fastest_providers, async_get_provider
